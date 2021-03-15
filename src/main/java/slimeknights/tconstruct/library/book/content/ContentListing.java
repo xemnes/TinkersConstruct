@@ -45,7 +45,7 @@ public class ContentListing extends TinkerPage {
 
     int y = yOff;
     int x = 0;
-    int w = GuiBook.PAGE_WIDTH;
+    int w = GuiBook.PAGE_WIDTH - 40;
     int line_height = 9;
 
     int bot = GuiBook.PAGE_HEIGHT - 30;

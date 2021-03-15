@@ -1,8 +1,22 @@
 {
-  "title":"Crafting Station",
-  "text": [
+  "title": "Crafting Station",
+  "grid_size": "small",
+  "grid": [
+    [
+      { "id": "minecraft:crafting_table" },
+      {}
+    ],
+    [
+      {},
+      {}
+    ]
+  ],
+  "result": {
+    "id": "tconstruct:tooltables"
+  },
+  "description": [
     {
-      "text": "Text Goes Here"
+      "text": "One of the main differences between it and the crafting table is that You can also access the contents of an adjacent inventory, such as a chest or a furnace whilst using it. It can also allow you to access other stations adjacent to it."
     }
   ]
-}
+} 

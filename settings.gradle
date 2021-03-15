@@ -17,3 +17,6 @@ include 'services:webservice'
 */
 
 rootProject.name = 'TConstruct'
+
+//include 'Mantle'
+//project(":Mantle").projectDir = file("lib/mantle")

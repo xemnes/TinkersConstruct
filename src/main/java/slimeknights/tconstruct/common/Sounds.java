@@ -26,7 +26,6 @@ public abstract class Sounds {
 
   public static final SoundEvent saw = sound("little_saw");
 
-  public static final SoundEvent frypan_boing = sound("frypan_hit");
   public static final SoundEvent toy_squeak = sound("toy_squeak");
   public static final SoundEvent slimesling = sound("slimesling");
   public static final SoundEvent shocking_charged = sound("charged");

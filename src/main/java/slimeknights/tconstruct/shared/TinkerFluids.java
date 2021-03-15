@@ -84,7 +84,7 @@ public class TinkerFluids extends TinkerPulse {
     FluidRegistry.enableUniversalBucket();
 
     // Fluids for integration, getting registered by TinkerIntegration
-    iron = fluidMetal(TinkerMaterials.iron.getIdentifier(), 0xa81212);
+    iron = fluidMetal(TinkerMaterials.iron.getIdentifier(), 0xfff17d);
     iron.setTemperature(769);
 
     gold = fluidMetal("gold", 0xf6d609);

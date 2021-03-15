@@ -1,10 +1,6 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "tconstruct:items/rapier/guard"
-    },
-    "offset": {
-        "x": 3,
-        "y": -3
+        "layer0": "tconstruct:items/parts/cross_guard"
     }
 }

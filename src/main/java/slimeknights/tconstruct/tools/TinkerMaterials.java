@@ -145,7 +145,7 @@ public final class TinkerMaterials {
   // mod integration
   public static final Material copper     = mat("copper", 0xed9f07);
   public static final Material bronze     = mat("bronze", 0xe3bd68);
-  public static final Material lead       = mat("lead", 0x4d4968);
+  public static final Material lead       = mat("lead", 0x7383ae);
   public static final Material silver     = mat("silver", 0xd1ecf6);
   public static final Material electrum   = mat("electrum", 0xe8db49);
   public static final Material steel      = mat("steel", 0xa7a7a7);
@@ -237,7 +237,7 @@ public final class TinkerMaterials {
     obsidian.setCastable(true);
     obsidian.addItemIngot("obsidian");
     obsidian.setRepresentativeItem(new ItemStack(Blocks.OBSIDIAN));
-    obsidian.addTrait(duritos);
+    obsidian.addTrait(duritos, HEAD);
 
     prismarine.setCraftable(true);
     prismarine.addItem("gemPrismarine", 1, Material.VALUE_Fragment);
@@ -338,8 +338,7 @@ public final class TinkerMaterials {
     bronze.addTrait(dense);
 
     lead.addCommonItems("Lead");
-    lead.addTrait(poisonous);
-    lead.addTrait(heavy);
+    lead.addTrait(heavy, HEAD);
 
     silver.addCommonItems("Silver");
     silver.addTrait(holy);

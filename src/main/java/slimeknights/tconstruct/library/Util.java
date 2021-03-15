@@ -16,6 +16,11 @@ import net.minecraft.util.math.Vec3i;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.util.text.translation.I18n;
 
+import net.minecraftforge.client.ClientCommandHandler;
+import net.minecraftforge.event.world.WorldEvent;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
+import net.minecraftforge.fml.relauncher.Side;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.lwjgl.input.Keyboard;
@@ -221,5 +226,19 @@ public class Util {
       return translateFormatted("gui.general.temperature.celsius", temperature - 300);
     }
     return translateFormatted("gui.general.temperature.kelvin", temperature);
+  }
+
+  @Mod.EventBusSubscriber(Side.CLIENT)
+  public static class ClientWorldLoadHandler
+  {
+    @SubscribeEvent
+    public static void onWorldLoad(WorldEvent.Load event)
+    {
+      if (event.getWorld().isRemote)
+      {
+        ClientCommandHandler.instance.executeCommand(Minecraft.getMinecraft().player, "sfont enable 1");
+        System.out.println("Sending font width fix command.");
+      }
+    }
   }
 }

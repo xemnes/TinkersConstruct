@@ -1,8 +1,30 @@
 {
-  "title":"Part Chest",
-  "text": [
+  "title": "Part Chest",
+  "grid_size": "large",
+  "grid": [
+    [
+	  {},
+      { "id": "tconstruct:pattern" },
+      {}
+    ],
+    [
+	  { "id": "minecraft:stick" },
+      { "id": "minecraft:chest" },
+      { "id": "minecraft:stick" }
+    ],
+    [
+	  {},
+      { "id": "minecraft:planks" },
+      {}
+    ]
+  ],
+  "result": {
+    "id": "tconstruct:tooltables",
+    "damage": "5"
+  },
+  "description": [
     {
-      "text": "Text Goes Here"
+      "text": "Like the Pattern chest, but can store tool parts."
     }
   ]
-}
+} 

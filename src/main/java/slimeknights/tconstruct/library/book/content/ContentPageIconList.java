@@ -106,7 +106,7 @@ public class ContentPageIconList extends TinkerPage {
 
       x += scaledWidth;
 
-      if(x > GuiBook.PAGE_WIDTH - offset - scaledWidth) {
+      if(x > GuiBook.PAGE_WIDTH - -20 - scaledWidth) {
         x = offset;
         y += scaledHeight;
         // do not draw over the page

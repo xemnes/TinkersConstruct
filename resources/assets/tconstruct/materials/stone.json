@@ -1,6 +1,6 @@
 {
-    "type": "colored",
+    "type": "block",
     "parameters": {
-        "color": "696969"
+        "texture": "minecraft:blocks/cobblestone"
     }
 }

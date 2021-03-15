@@ -1,9 +1,6 @@
 {
-    "type": "multicolor",
-    "suffix": "contrast",
+    "type": "block",
     "parameters": {
-        "dark": "71589c",
-        "mid": "8f60d4",
-        "bright": "8c53df"
+        "texture": "minecraft:blocks/obsidian"
     }
 }

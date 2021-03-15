@@ -110,7 +110,7 @@ public class Rapier extends SwordCore {
     EnumActionResult result = EnumActionResult.SUCCESS;
     if (hand == EnumHand.MAIN_HAND) {
       ItemStack offhand = playerIn.getHeldItemOffhand();
-      if (!offhand.isEmpty() && (offhand.getItem() == TinkerMeleeWeapons.battleSign || offhand.getItem().isShield(offhand, playerIn))) {
+      if (!offhand.isEmpty() && (offhand.getItem().isShield(offhand, playerIn))) {
         result = EnumActionResult.PASS;
       }
     }

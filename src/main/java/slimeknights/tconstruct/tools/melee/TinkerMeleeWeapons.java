@@ -22,10 +22,8 @@ import slimeknights.tconstruct.library.Util;
 import slimeknights.tconstruct.library.tools.ToolCore;
 import slimeknights.tconstruct.tools.AbstractToolPulse;
 import slimeknights.tconstruct.tools.TinkerTools;
-import slimeknights.tconstruct.tools.melee.item.BattleSign;
 import slimeknights.tconstruct.tools.melee.item.BroadSword;
 import slimeknights.tconstruct.tools.melee.item.Cleaver;
-import slimeknights.tconstruct.tools.melee.item.FryPan;
 import slimeknights.tconstruct.tools.melee.item.LongSword;
 import slimeknights.tconstruct.tools.melee.item.Rapier;
 
@@ -47,8 +45,6 @@ public class TinkerMeleeWeapons extends AbstractToolPulse {
   public static ToolCore rapier;
   public static ToolCore cutlass;
   public static ToolCore dagger;
-  public static ToolCore fryPan;
-  public static ToolCore battleSign;
 
   public static ToolCore cleaver;
   public static ToolCore battleAxe;
@@ -77,8 +73,6 @@ public class TinkerMeleeWeapons extends AbstractToolPulse {
     rapier = registerTool(registry, new Rapier(), "rapier");
     // cutlass
     // dagger
-    fryPan = registerTool(registry, new FryPan(), "frypan");
-    battleSign = registerTool(registry, new BattleSign(), "battlesign");
 
     cleaver = registerTool(registry, new Cleaver(), "cleaver");
     //battleAxe = registerTool(new BattleAxe(), "battleaxe");
@@ -97,8 +91,6 @@ public class TinkerMeleeWeapons extends AbstractToolPulse {
     TinkerRegistry.registerToolCrafting(broadSword);
     TinkerRegistry.registerToolCrafting(longSword);
     TinkerRegistry.registerToolCrafting(rapier);
-    TinkerRegistry.registerToolCrafting(fryPan);
-    TinkerRegistry.registerToolCrafting(battleSign);
 
     TinkerRegistry.registerToolForgeCrafting(cleaver);
     //TinkerRegistry.registerToolForgeCrafting(battleAxe);
@@ -109,10 +101,5 @@ public class TinkerMeleeWeapons extends AbstractToolPulse {
   @Override
   public void postInit(FMLPostInitializationEvent event) {
     super.postInit(event);
-  }
-
-  @Override
-  protected void registerEventHandlers() {
-    MinecraftForge.EVENT_BUS.register(battleSign); // battlesign events
   }
 }

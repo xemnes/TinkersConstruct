@@ -1,6 +1,7 @@
 {
-    "type": "metal",
+    "type": "metal_textured",
     "parameters": {
+        "texture": "tconstruct:materials/shiny",
         "color": "a93df5",
         "shinyness": 0.4,
         "brightness": 0.2,

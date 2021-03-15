@@ -1,8 +1,23 @@
 {
-  "title":"Part Builder",
-  "text": [
+  "title": "Part Builder",
+  "grid_size": "small",
+  "grid": [
+    [
+      { "id": "tconstruct:pattern" },
+      {}
+    ],
+    [
+      { "id": "minecraft:log" },
+      {}
+    ]
+  ],
+  "result": {
+    "id": "tconstruct:tooltables",
+    "damage": "2"
+  },
+  "description": [
     {
-      "text": "Text Goes Here"
+      "text": "Part Builder is used in crafting parts for tools and weapons. In order to craft parts, a basic or casting pattern is necessary. Placing this next to a Pattern Chest will allow the player to access patterns whilst using it."
     }
   ]
-}
+} 

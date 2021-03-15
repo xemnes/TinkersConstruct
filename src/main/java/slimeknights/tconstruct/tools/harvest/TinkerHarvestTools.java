@@ -24,7 +24,6 @@ import slimeknights.tconstruct.tools.TinkerTools;
 import slimeknights.tconstruct.tools.tools.Excavator;
 import slimeknights.tconstruct.tools.tools.Hammer;
 import slimeknights.tconstruct.tools.tools.Hatchet;
-import slimeknights.tconstruct.tools.tools.LumberAxe;
 import slimeknights.tconstruct.tools.tools.Mattock;
 import slimeknights.tconstruct.tools.tools.Pickaxe;
 import slimeknights.tconstruct.tools.tools.Scythe;
@@ -52,7 +51,6 @@ public class TinkerHarvestTools extends AbstractToolPulse {
 
   public static ToolCore hammer;
   public static ToolCore excavator;
-  public static ToolCore lumberAxe;
   public static ToolCore scythe;
 
   @Override
@@ -82,7 +80,6 @@ public class TinkerHarvestTools extends AbstractToolPulse {
 
     hammer = registerTool(registry, new Hammer(), "hammer");
     excavator = registerTool(registry, new Excavator(), "excavator");
-    lumberAxe = registerTool(registry, new LumberAxe(), "lumberaxe");
     scythe = registerTool(registry, new Scythe(), "scythe");
   }
 
@@ -104,7 +101,6 @@ public class TinkerHarvestTools extends AbstractToolPulse {
 
     TinkerRegistry.registerToolForgeCrafting(hammer);
     TinkerRegistry.registerToolForgeCrafting(excavator);
-    TinkerRegistry.registerToolForgeCrafting(lumberAxe);
     TinkerRegistry.registerToolForgeCrafting(scythe);
   }
 

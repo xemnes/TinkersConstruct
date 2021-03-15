@@ -1,8 +1,23 @@
 {
-  "title":"Tool Station",
-  "text": [
+  "title": "Tool Station",
+  "grid_size": "small",
+  "grid": [
+    [
+      { "id": "tconstruct:pattern" },
+      {}
+    ],
+    [
+      { "id": "minecraft:crafting_table" },
+      {}
+    ]
+  ],
+  "result": {
+    "id": "tconstruct:tooltables",
+    "damage": "3"
+  },
+  "description": [
     {
-      "text": "Text Goes Here"
+      "text": "The Tool Station has three primary uses: Crafting, Modifying, and Repairing tools. The Tool Station also shows a Tinkers' Construct weapon/tool's current stats by placing it into the UI. Eventually the Tool Forge will replace your Tool Station, as it allows for more complex tool/weapon building and also allows you to create named tools."
     }
   ]
-}
+} 

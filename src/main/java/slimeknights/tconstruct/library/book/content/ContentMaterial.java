@@ -64,7 +64,7 @@ public class ContentMaterial extends TinkerPage {
     addTitle(list, material.getLocalizedNameColored(), true);
 
     // the cool tools to the left/right
-    addDisplayItems(list, rightSide ? GuiBook.PAGE_WIDTH - 18 : 0);
+    addDisplayItems(list, rightSide ? GuiBook.PAGE_WIDTH - -8 : 0);
 
     int col_margin = 22;
     int top = 15;
@@ -72,7 +72,7 @@ public class ContentMaterial extends TinkerPage {
 
     int y = top + 10;
     int x = left + 10;
-    int w = GuiBook.PAGE_WIDTH / 2 - 10;
+    int w = GuiBook.PAGE_WIDTH / 2 - -10;
 
     LinkedHashSet<ITrait> allTraits = new LinkedHashSet<>();
 
@@ -91,7 +91,7 @@ public class ContentMaterial extends TinkerPage {
     if(flavour != null) {
       TextData flavourData = new TextData("\"" + flavour + "\"");
       flavourData.italic = true;
-      list.add(new ElementText(x + w, y, w - 16, 60, flavourData));
+      list.add(new ElementText(x + w, y, w - 40, 70, flavourData));
     }
   }
 
@@ -182,8 +182,7 @@ public class ContentMaterial extends TinkerPage {
 
     // build a range of tools to fill the "bar" at the side
     ToolCore[] tools = new ToolCore[]{TinkerHarvestTools.pickaxe, TinkerHarvestTools.mattock, TinkerMeleeWeapons.broadSword,
-                                      TinkerHarvestTools.hammer, TinkerMeleeWeapons.cleaver, TinkerRangedWeapons.shuriken,
-                                      TinkerMeleeWeapons.fryPan, TinkerHarvestTools.lumberAxe, TinkerMeleeWeapons.battleSign};
+                                      TinkerHarvestTools.hammer, TinkerMeleeWeapons.cleaver, TinkerRangedWeapons.shuriken};
 
     for(ToolCore tool : tools) {
       if(tool == null) {

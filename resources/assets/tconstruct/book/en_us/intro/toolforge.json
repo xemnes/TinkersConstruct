@@ -1,8 +1,29 @@
 {
-  "title":"Tool Forge",
-  "text": [
+  "title": "Tool Forge",
+  "grid_size": "large",
+  "grid": [
+    [
+	  { "id": "tconstruct:seared", "damage": "3" },
+	  { "id": "tconstruct:seared", "damage": "3" },
+	  { "id": "tconstruct:seared", "damage": "3" }
+    ],
+    [
+	  { "id": "minecraft:iron_block" },
+      { "id": "tconstruct:tooltables", "damage": "3" },
+      { "id": "minecraft:iron_block" }
+    ],
+    [
+	  { "id": "minecraft:iron_block" },
+      {},
+      { "id": "minecraft:iron_block" }
+    ]
+  ],
+  "result": {
+    "id": "tconstruct:toolforge"
+  },
+  "description": [
     {
-      "text": "Text Goes Here"
+      "text": "A more advanced version of the Tool Station which allows you to make advanced tools such as the excavator and the hammer. Note: Recipe can use any type of seared stone."
     }
   ]
 }

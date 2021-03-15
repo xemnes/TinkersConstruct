@@ -1,8 +1,23 @@
 {
-  "title":"Stencil Table",
-  "text": [
+  "title": "Stencil Table",
+  "grid_size": "small",
+  "grid": [
+    [
+      { "id": "tconstruct:pattern" },
+      {}
+    ],
+    [
+      { "id": "minecraft:planks" },
+      {}
+    ]
+  ],
+  "result": {
+    "id": "tconstruct:tooltables",
+    "damage": "1"
+  },
+  "description": [
     {
-      "text": "Text Goes Here"
+      "text": "Stencil Tables are used to turn Blank Patterns into patterns for specific tool parts. To make a pattern or cast, place the blank pattern in the slot in the table, and cycle through the pattern options with the 'Next' and 'Previous' buttons."
     }
   ]
-}
+} 

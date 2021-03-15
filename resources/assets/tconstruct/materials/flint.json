@@ -1,7 +1,8 @@
 {
-  "type": "colored",
-  "suffix": "contrast",
-  "parameters": {
-    "color": "ffffff"
-  }
+    "type": "multicolor",
+    "parameters": {
+        "dark": "000000",
+        "mid": "808080",
+        "bright": "ffffff"
+    }
 }

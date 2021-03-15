@@ -11,42 +11,42 @@
   },
   {
     "name": "blankpattern",
-    "type": "text",
+    "type": "crafting",
     "data": "intro/blankpattern.json"
   },
   {
     "name": "craftingstation",
-    "type": "text",
+    "type": "crafting",
     "data": "intro/craftingstation.json"
   },
   {
     "name": "stenciltable",
-    "type": "text",
+    "type": "crafting",
     "data": "intro/stenciltable.json"
   },
   {
-    "name": "patternchest",
-    "type": "text",
-    "data": "intro/patternchest.json"
-  },
-  {
     "name": "partbuilder",
-    "type": "text",
+    "type": "crafting",
     "data": "intro/partbuilder.json"
   },
   {
+    "name": "patternchest",
+    "type": "crafting",
+    "data": "intro/patternchest.json"
+  },
+  {
     "name": "partchest",
-    "type": "text",
+    "type": "crafting",
     "data": "intro/partchest.json"
   },
   {
     "name": "toolstation",
-    "type": "text",
+    "type": "crafting",
     "data": "intro/toolstation.json"
   },
   {
     "name": "toolforge",
-    "type": "text",
+    "type": "crafting",
     "data": "intro/toolforge.json"
   }
 ]

@@ -11,7 +11,7 @@
   },
   {
     "name": "hidden",
-    "type": "image with text below",
+    "type": "imageText2",
     "data": "tools/repairing2.json"
   },
   {
@@ -60,11 +60,6 @@
     "data": "tools/excavator.json"
   },
   {
-    "name": "lumberaxe",
-    "type": "tool",
-    "data": "tools/lumberaxe.json"
-  },
-  {
     "name": "broadsword",
     "type": "tool",
     "data": "tools/broadsword.json"
@@ -78,16 +73,6 @@
     "name": "rapier",
     "type": "tool",
     "data": "tools/rapier.json"
-  },
-  {
-    "name": "battlesign",
-    "type": "tool",
-    "data": "tools/battlesign.json"
-  },
-  {
-    "name": "frypan",
-    "type": "tool",
-    "data": "tools/frypan.json"
   },
   {
     "name": "cleaver",

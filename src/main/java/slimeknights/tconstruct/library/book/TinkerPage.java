@@ -27,8 +27,8 @@ public abstract class TinkerPage extends PageContent {
     title.dropshadow = dropShadow;
 
     int w = (int) Math.ceil(parent.parent.parent.fontRenderer.getStringWidth(titleText) * title.scale);
-    int x = (GuiBook.PAGE_WIDTH - w) / 2;
+    int x = (GuiBook.PAGE_WIDTH = 155) / 2;
 
-    list.add(new ElementText(x, y, w, 24, title));
+    list.add(new ElementText(x / 4, y, w, 24, title));
   }
 }

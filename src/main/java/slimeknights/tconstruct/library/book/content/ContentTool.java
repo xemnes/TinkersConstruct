@@ -88,7 +88,7 @@ public class ContentTool extends TinkerPage {
     // description
     int h = GuiBook.PAGE_WIDTH / 3 - 10;
     int y = 16;
-    list.add(new ElementText(padding, y, GuiBook.PAGE_WIDTH - padding*2, h, text));
+    list.add(new ElementText(padding, y, GuiBook.PAGE_WIDTH - 40, h, text));
 
     ImageData img = IMG_SLOTS;
     int imgX = GuiBook.PAGE_WIDTH - img.width - 8;
@@ -112,7 +112,7 @@ public class ContentTool extends TinkerPage {
       }
 
       y += 10;
-      list.add(new ElementText(padding, y, GuiBook.PAGE_WIDTH / 2 + 5, GuiBook.PAGE_HEIGHT - h - 20, effectData));
+      list.add(new ElementText(padding, y, GuiBook.PAGE_WIDTH -110, GuiBook.PAGE_HEIGHT - h - 20, effectData));
     }
 
 

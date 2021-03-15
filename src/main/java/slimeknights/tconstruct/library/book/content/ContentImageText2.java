@@ -38,7 +38,7 @@ public class ContentImageText2 extends ContentImageText {
 
     if(text != null && text.length > 0) {
       y += 5;
-      list.add(new ElementText(0, y, GuiBook.PAGE_WIDTH, GuiBook.PAGE_HEIGHT - y, text));
+      list.add(new ElementText(0, y, GuiBook.PAGE_WIDTH - 40, GuiBook.PAGE_HEIGHT - y, text));
     }
   }
 }

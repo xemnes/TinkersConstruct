@@ -51,11 +51,9 @@ import slimeknights.tconstruct.shared.client.ParticleEffect;
 import slimeknights.tconstruct.shared.client.ParticleEndspeed;
 import slimeknights.tconstruct.tools.TinkerTools;
 import slimeknights.tconstruct.tools.common.client.particle.ParticleAttackCleaver;
-import slimeknights.tconstruct.tools.common.client.particle.ParticleAttackFrypan;
 import slimeknights.tconstruct.tools.common.client.particle.ParticleAttackHammer;
 import slimeknights.tconstruct.tools.common.client.particle.ParticleAttackHatchet;
 import slimeknights.tconstruct.tools.common.client.particle.ParticleAttackLongsword;
-import slimeknights.tconstruct.tools.common.client.particle.ParticleAttackLumberAxe;
 import slimeknights.tconstruct.tools.common.client.particle.ParticleAttackRapier;
 import slimeknights.tconstruct.tools.harvest.TinkerHarvestTools;
 
@@ -194,10 +192,6 @@ public abstract class ClientProxy extends CommonProxy {
         return new ParticleAttackRapier(world, x, y, z, xSpeed, ySpeed, zSpeed, mc.getTextureManager());
       case HATCHET_ATTACK:
         return new ParticleAttackHatchet(world, x, y, z, xSpeed, ySpeed, zSpeed, mc.getTextureManager());
-      case LUMBERAXE_ATTACK:
-        return new ParticleAttackLumberAxe(world, x, y, z, xSpeed, ySpeed, zSpeed, mc.getTextureManager());
-      case FRYPAN_ATTACK:
-        return new ParticleAttackFrypan(world, x, y, z, xSpeed, ySpeed, zSpeed, mc.getTextureManager());
       case HAMMER_ATTACK:
         return new ParticleAttackHammer(world, x, y, z, xSpeed, ySpeed, zSpeed, mc.getTextureManager());
       // effects

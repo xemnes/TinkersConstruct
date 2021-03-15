@@ -1,8 +1,22 @@
 {
-  "title":"Blank Pattern",
-  "text": [
+  "title": "Blank Pattern",
+  "grid_size": "small",
+  "grid": [
+    [
+      { "id": "minecraft:stick" },
+      { "id": "minecraft:planks" }
+    ],
+    [
+      { "id": "minecraft:planks" },
+      { "id": "minecraft:stick" }
+    ]
+  ],
+  "result": {
+    "id": "tconstruct:pattern"
+  },
+  "description": [
     {
-      "text": "Text Goes Here"
+      "text": "Blank Patterns are the first step in Tinkers' Construct, being used for the Tool Station, the Pattern Chest, the Stencil Table, and the Part Builder. As well as being used in the Stencil Table to create patterns required to make basic tool parts."
     }
   ]
-}
+} 

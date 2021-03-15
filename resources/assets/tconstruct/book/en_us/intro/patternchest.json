@@ -1,8 +1,23 @@
 {
-  "title":"Pattern Chest",
-  "text": [
+  "title": "Pattern Chest",
+  "grid_size": "small",
+  "grid": [
+    [
+      { "id": "tconstruct:pattern" },
+      {}
+    ],
+    [
+      { "id": "minecraft:chest" },
+      {}
+    ]
+  ],
+  "result": {
+    "id": "tconstruct:tooltables",
+    "damage": "4"
+  },
+  "description": [
     {
-      "text": "Text Goes Here"
+      "text": "The Pattern Chest is used for storing stencils or casts. The chest has 30 slots. Placing this Chest next to a Part Builder and/or Stencil Table will make the chest's inventory appear in the respective tables GUI for easy access! NOTE: Pattern Chest must be placed between Part Builder & Stencil table when both are present."
     }
   ]
-}
+} 
