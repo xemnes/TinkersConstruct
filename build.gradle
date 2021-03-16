@@ -131,6 +131,7 @@ dependencies {
     runtime files("E:/.minecraft/realmofstorms/source files/Tinkers-Defence-master/build/libs/tinkersdefence-1.5.4.jar")
     runtime files("E:/.minecraft/realmofstorms/source files/Total-Tinkers_master/build/libs/totaltinkers-0.5.4.jar")
     runtime files("E:/.minecraft/realmofstorms/source files/TinkersAether_master/build/libs/tinkersaether-1.4.1.jar")
+    runtime files("E:/.minecraft/realmofstorms/source files/TinkersComplement_maaster/build/libs/TinkersComplement-1.12.2-0.4.3.jar")
 
     // compile against the JEI API
     deobfCompile "mezz.jei:jei_${config.minecraft_version}:${config.jei_version}:api"

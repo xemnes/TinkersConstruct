@@ -63,10 +63,14 @@ public class ToolPart extends MaterialItem implements IToolPart {
             subItems.add(getItemstackWithMaterial(TinkerMaterials.feather));
             break;
           }
-            subItems.add(getItemstackWithMaterial(TinkerMaterials.iron));
-            if (!Config.listAllPartMaterials) {
-              break;
-            }
+          if(mat.hasStats(MaterialTypes.SHAFT)) {
+            subItems.add(getItemstackWithMaterial(TinkerMaterials.wood));
+            break;
+          }
+          subItems.add(getItemstackWithMaterial(TinkerMaterials.iron));
+          if (!Config.listAllPartMaterials) {
+            break;
+          }
         }
       }
     }
