@@ -13,6 +13,7 @@ import slimeknights.tconstruct.library.materials.HeadMaterialStats;
 import slimeknights.tconstruct.library.materials.Material;
 import slimeknights.tconstruct.library.materials.MaterialTypes;
 import slimeknights.tconstruct.library.tools.ToolPart;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 
 import javax.annotation.Nullable;
 import java.util.List;
@@ -31,13 +32,7 @@ public class SharpeningKit extends ToolPart {
   @Override
   public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
     if(this.isInCreativeTab(tab)) {
-      // this adds a variant of each material to the creative menu
-      for(Material mat : TinkerRegistry.getAllMaterialsWithStats(MaterialTypes.HEAD)) {
-        subItems.add(getItemstackWithMaterial(mat));
-        if(!Config.listAllPartMaterials) {
-          break;
-        }
-      }
+      subItems.add(getItemstackWithMaterial(TinkerMaterials.iron));
     }
   }
 

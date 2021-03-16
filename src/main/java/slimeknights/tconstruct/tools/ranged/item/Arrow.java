@@ -35,7 +35,7 @@ public class Arrow extends ProjectileCore {
   @Override
   public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
     if(this.isInCreativeTab(tab)) {
-      addDefaultSubItems(subItems, TinkerMaterials.wood, null, TinkerMaterials.feather);
+      addDefaultSubItems(subItems, TinkerMaterials.wood, TinkerMaterials.iron, TinkerMaterials.feather);
     }
   }
 

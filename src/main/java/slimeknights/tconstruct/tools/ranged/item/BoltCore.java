@@ -42,8 +42,8 @@ public class BoltCore extends ToolPart {
     if(this.isInCreativeTab(tab)) {
       for(Material mat : TinkerRegistry.getAllMaterials()) {
         // check if the material makes sense for this item (is it usable to build stuff?)
-        if(canUseMaterial(mat) && mat.hasStats(MaterialTypes.SHAFT)) {
-          subItems.add(getItemstackWithMaterials(mat, TinkerMaterials.iron));
+        if(mat.hasStats(MaterialTypes.SHAFT)) {
+          subItems.add(getItemstackWithMaterials(TinkerMaterials.wood, TinkerMaterials.iron));
           if(!Config.listAllToolMaterials) {
             break;
           }

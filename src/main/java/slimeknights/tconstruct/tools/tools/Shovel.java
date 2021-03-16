@@ -4,6 +4,7 @@ import com.google.common.collect.ImmutableSet;
 
 import net.minecraft.block.Block;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
@@ -12,6 +13,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumFacing;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 
@@ -26,6 +28,7 @@ import slimeknights.tconstruct.library.tinkering.PartMaterialType;
 import slimeknights.tconstruct.library.tools.AoeToolCore;
 import slimeknights.tconstruct.library.tools.ToolNBT;
 import slimeknights.tconstruct.library.utils.ToolHelper;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 import slimeknights.tconstruct.tools.TinkerTools;
 
 public class Shovel extends AoeToolCore {
@@ -51,6 +54,13 @@ public class Shovel extends AoeToolCore {
     addCategory(Category.HARVEST);
 
     setHarvestLevel("shovel", 0);
+  }
+
+  @Override
+  public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
+    if(this.isInCreativeTab(tab)) {
+      addDefaultSubItems(subItems, TinkerMaterials.wood, TinkerMaterials.iron, TinkerMaterials.iron);
+    }
   }
 
   @Override

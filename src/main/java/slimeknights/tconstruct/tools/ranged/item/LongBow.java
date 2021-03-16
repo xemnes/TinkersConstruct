@@ -34,7 +34,7 @@ public class LongBow extends ShortBow {
   @Override
   public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
     if(this.isInCreativeTab(tab)) {
-      addDefaultSubItems(subItems, null, null, null, TinkerMaterials.string);
+      addDefaultSubItems(subItems, TinkerMaterials.wood, TinkerMaterials.wood, TinkerMaterials.iron, TinkerMaterials.string);
     }
   }
 

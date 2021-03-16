@@ -63,7 +63,7 @@ public class Bolt extends ProjectileCore {
 
         if(head.hasStats(MaterialTypes.HEAD)) {
           mats.add(TinkerMaterials.wood);
-          mats.add(head);
+          mats.add(TinkerMaterials.iron);
           mats.add(TinkerMaterials.feather);
 
           ItemStack tool = buildItem(mats);

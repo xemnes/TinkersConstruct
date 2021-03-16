@@ -1,6 +1,6 @@
 {
     "textures": {
-        "layer0": "tconstruct:items/shovel/head"
+        "layer0": "tconstruct:items/parts/shovel_head"
     },
     "offset": {
         "x": -3,

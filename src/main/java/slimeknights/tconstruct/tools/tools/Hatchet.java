@@ -2,10 +2,12 @@ package slimeknights.tconstruct.tools.tools;
 
 import com.google.common.collect.ImmutableSet;
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.item.ItemAxe;
 import net.minecraft.item.ItemStack;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
 import slimeknights.tconstruct.library.client.particle.Particles;
@@ -15,6 +17,7 @@ import slimeknights.tconstruct.library.tinkering.PartMaterialType;
 import slimeknights.tconstruct.library.tools.AoeToolCore;
 import slimeknights.tconstruct.library.tools.ToolNBT;
 import slimeknights.tconstruct.library.utils.ToolHelper;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 import slimeknights.tconstruct.tools.TinkerTools;
 
 import java.util.List;
@@ -41,6 +44,13 @@ public class Hatchet extends AoeToolCore {
     addCategory(Category.WEAPON);
 
     this.setHarvestLevel("axe", 0);
+  }
+
+  @Override
+  public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
+    if(this.isInCreativeTab(tab)) {
+      addDefaultSubItems(subItems, TinkerMaterials.wood, TinkerMaterials.iron, TinkerMaterials.iron);
+    }
   }
 
   @Override

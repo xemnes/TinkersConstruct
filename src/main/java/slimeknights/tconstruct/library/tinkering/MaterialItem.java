@@ -10,6 +10,7 @@ import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.materials.Material;
 import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.library.utils.Tags;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 
 /**
  * Represents an item that has a Material associated with it. The metadata of an itemstack identifies which material the
@@ -24,13 +25,7 @@ public class MaterialItem extends Item implements IMaterialItem {
   @Override
   public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
     if(this.isInCreativeTab(tab)) {
-      // this adds a variant of each material to the creative menu
-      for(Material mat : TinkerRegistry.getAllMaterials()) {
-        subItems.add(getItemstackWithMaterial(mat));
-        if(!Config.listAllPartMaterials) {
-          break;
-        }
-      }
+      subItems.add(getItemstackWithMaterial(TinkerMaterials.iron));
     }
   }
 

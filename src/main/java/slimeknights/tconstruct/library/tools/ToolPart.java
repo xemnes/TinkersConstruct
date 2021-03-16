@@ -21,11 +21,13 @@ import slimeknights.tconstruct.library.TinkerRegistry;
 import slimeknights.tconstruct.library.Util;
 import slimeknights.tconstruct.library.materials.IMaterialStats;
 import slimeknights.tconstruct.library.materials.Material;
+import slimeknights.tconstruct.library.materials.MaterialTypes;
 import slimeknights.tconstruct.library.tinkering.MaterialItem;
 import slimeknights.tconstruct.library.tinkering.PartMaterialType;
 import slimeknights.tconstruct.library.traits.ITrait;
 import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.library.utils.Tags;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -53,10 +55,18 @@ public class ToolPart extends MaterialItem implements IToolPart {
       for(Material mat : TinkerRegistry.getAllMaterials()) {
         // check if the material makes sense for this item (is it usable to build stuff?)
         if(canUseMaterial(mat)) {
-          subItems.add(getItemstackWithMaterial(mat));
-          if(!Config.listAllPartMaterials) {
+          if(mat.hasStats(MaterialTypes.BOWSTRING)) {
+            subItems.add(getItemstackWithMaterial(TinkerMaterials.string));
             break;
           }
+          if(mat.hasStats(MaterialTypes.FLETCHING)) {
+            subItems.add(getItemstackWithMaterial(TinkerMaterials.feather));
+            break;
+          }
+            subItems.add(getItemstackWithMaterial(TinkerMaterials.iron));
+            if (!Config.listAllPartMaterials) {
+              break;
+            }
         }
       }
     }

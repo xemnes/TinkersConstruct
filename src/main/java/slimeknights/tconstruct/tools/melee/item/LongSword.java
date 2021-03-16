@@ -1,5 +1,6 @@
 package slimeknights.tconstruct.tools.melee.item;
 
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
 import net.minecraft.entity.player.EntityPlayer;
@@ -8,6 +9,7 @@ import net.minecraft.item.ItemStack;
 import net.minecraft.util.ActionResult;
 import net.minecraft.util.EnumActionResult;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.MathHelper;
 import net.minecraft.world.World;
 import slimeknights.tconstruct.library.client.particle.Particles;
@@ -16,6 +18,7 @@ import slimeknights.tconstruct.library.tinkering.Category;
 import slimeknights.tconstruct.library.tinkering.PartMaterialType;
 import slimeknights.tconstruct.library.tools.SwordCore;
 import slimeknights.tconstruct.library.tools.ToolNBT;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 import slimeknights.tconstruct.tools.TinkerTools;
 
 import javax.annotation.Nonnull;
@@ -31,6 +34,13 @@ public class LongSword extends SwordCore {
           PartMaterialType.extra(TinkerTools.handGuard));
 
     addCategory(Category.WEAPON);
+  }
+
+  @Override
+  public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
+    if(this.isInCreativeTab(tab)) {
+      addDefaultSubItems(subItems, TinkerMaterials.wood, TinkerMaterials.iron, TinkerMaterials.iron);
+    }
   }
 
   @Override

@@ -3,6 +3,7 @@ package slimeknights.tconstruct.tools.tools;
 import com.google.common.collect.ImmutableList;
 
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.enchantment.EnchantmentHelper;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EntityLivingBase;
@@ -11,6 +12,7 @@ import net.minecraft.init.Enchantments;
 import net.minecraft.init.SoundEvents;
 import net.minecraft.item.ItemStack;
 import net.minecraft.util.EnumHand;
+import net.minecraft.util.NonNullList;
 import net.minecraft.util.math.AxisAlignedBB;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.world.World;
@@ -31,6 +33,7 @@ import slimeknights.tconstruct.library.materials.MaterialTypes;
 import slimeknights.tconstruct.library.tinkering.PartMaterialType;
 import slimeknights.tconstruct.library.tools.ToolNBT;
 import slimeknights.tconstruct.library.utils.ToolHelper;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 import slimeknights.tconstruct.tools.TinkerTools;
 
 public class Scythe extends Kama {
@@ -42,6 +45,13 @@ public class Scythe extends Kama {
         PartMaterialType.head(TinkerTools.scytheHead),
         PartMaterialType.extra(TinkerTools.toughBinding),
         PartMaterialType.handle(TinkerTools.toughToolRod));
+  }
+
+  @Override
+  public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
+    if(this.isInCreativeTab(tab)) {
+      addDefaultSubItems(subItems, TinkerMaterials.wood, TinkerMaterials.iron, TinkerMaterials.iron, TinkerMaterials.wood);
+    }
   }
 
   @Override

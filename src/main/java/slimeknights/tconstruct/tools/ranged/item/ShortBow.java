@@ -50,7 +50,7 @@ public class ShortBow extends BowCore implements ICustomCrosshairUser {
   @Override
   public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
     if(this.isInCreativeTab(tab)) {
-      addDefaultSubItems(subItems, null, null, TinkerMaterials.string);
+      addDefaultSubItems(subItems, TinkerMaterials.wood, TinkerMaterials.wood, TinkerMaterials.string);
     }
   }
 

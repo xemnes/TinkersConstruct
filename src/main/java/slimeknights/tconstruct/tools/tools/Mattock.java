@@ -3,14 +3,12 @@ package slimeknights.tconstruct.tools.tools;
 import com.google.common.collect.ImmutableSet;
 
 import net.minecraft.block.state.IBlockState;
+import net.minecraft.creativetab.CreativeTabs;
 import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.init.Items;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.NBTTagCompound;
-import net.minecraft.util.EnumActionResult;
-import net.minecraft.util.EnumFacing;
-import net.minecraft.util.EnumHand;
-import net.minecraft.util.StringUtils;
+import net.minecraft.util.*;
 import net.minecraft.util.math.BlockPos;
 import net.minecraft.util.text.TextFormatting;
 import net.minecraft.world.World;
@@ -35,6 +33,7 @@ import slimeknights.tconstruct.library.utils.TagUtil;
 import slimeknights.tconstruct.library.utils.Tags;
 import slimeknights.tconstruct.library.utils.ToolHelper;
 import slimeknights.tconstruct.library.utils.TooltipBuilder;
+import slimeknights.tconstruct.tools.TinkerMaterials;
 import slimeknights.tconstruct.tools.TinkerTools;
 
 public class Mattock extends AoeToolCore {
@@ -84,6 +83,13 @@ public class Mattock extends AoeToolCore {
   @Override
   public boolean isEffective(IBlockState state) {
     return effective_materials_axe.contains(state.getMaterial()) || effective_materials_shovel.contains(state.getMaterial());
+  }
+
+  @Override
+  public void getSubItems(CreativeTabs tab, NonNullList<ItemStack> subItems) {
+    if(this.isInCreativeTab(tab)) {
+      addDefaultSubItems(subItems, TinkerMaterials.wood, TinkerMaterials.iron, TinkerMaterials.iron);
+    }
   }
 
   @Override

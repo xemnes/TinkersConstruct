@@ -1,7 +1,7 @@
 {
     "parent": "builtin/generated",
     "textures": {
-        "layer0": "tconstruct:items/excavator/head"
+        "layer0": "tconstruct:items/parts/excavator_head"
     },
     "offset": {
         "x": -3,
